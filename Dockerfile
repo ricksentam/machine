@@ -1,8 +1,8 @@
-FROM golang:1.7.1
+FROM golang:1.3.11
 
-RUN go get  github.com/golang/lint/golint \
-            github.com/mattn/goveralls \
-            golang.org/x/tools/cover
+RUN go get  github.com/golang/lint/golint;
+            github.com/mattn/goveralls;
+            golang.org/x/tools/cover;
 
 ENV USER root
 WORKDIR /go/src/github.com/docker/machine
